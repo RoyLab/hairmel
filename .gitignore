@@ -25,6 +25,7 @@
 *.opendb
 *.ini
 *.adf
+*.mb
 3rdparty/tbb44*
 
 # Build results

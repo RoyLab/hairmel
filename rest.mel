@@ -5,7 +5,7 @@ setSelectedHairCurves "current" "rest";
 float $restTime = 200;
 playbackOptions -l "once" -ast 0 -aet $restTime -min 0 -max $restTime;
 int $i;
-print "Computing rest state...\n"
+print "Computing rest state...\n";
 for ($i=0;$i<$restTime;$i++)
     currentTime($i);
 

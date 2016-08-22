@@ -94,4 +94,7 @@ def runMain(begin, end=None):
     if begin <= state and end >= state:
         if begin == state:
             openFile()
-        mel.eval('source "'+fullPath(state)+'"')
+        mel.eval('source "'+fullPath(state)+'";')
+        for i in range(2):
+            mel.eval('cacheAndRender('+str(i+1)+')')
+
