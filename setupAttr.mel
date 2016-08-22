@@ -1,0 +1,92 @@
+// setup hair system
+setAttr "hairSystemShape1.collide" 1;
+setAttr "hairSystemShape1.selfCollide" 1;
+setAttr "hairSystemShape1.collideGround" 0;
+setAttr "hairSystemShape1.groundHeight" 0;
+setAttr "hairSystemShape1.collisionFlag" 2;
+setAttr "hairSystemShape1.selfCollisionFlag" 2;
+setAttr "hairSystemShape1.stretchResistance" 109.497;
+setAttr "hairSystemShape1.compressionResistance" 92.737;
+setAttr "hairSystemShape1.restLengthScale" 1;
+setAttr "hairSystemShape1.twistResistance" 12.291;
+setAttr "hairSystemShape1.bendResistance" 60.335;
+setAttr "hairSystemShape1.stiffness" 0.15;
+setAttr "hairSystemShape1.lengthFlex" 0;
+setAttr "hairSystemShape1.damp" 1.143;
+setAttr "hairSystemShape1.stretchDamp" 0.1;
+setAttr "hairSystemShape1.drag" 0.05;
+setAttr "hairSystemShape1.tangentialDrag" 0.1;
+setAttr "hairSystemShape1.friction" 0.5;
+setAttr "hairSystemShape1.stickiness" 0;
+setAttr "hairSystemShape1.bounce" 0;
+setAttr "hairSystemShape1.mass" 1;
+setAttr "hairSystemShape1.selfCollideWidthScale" 1;
+setAttr "hairSystemShape1.staticCling" 0;
+setAttr "hairSystemShape1.repulsion" 0.5;
+setAttr "hairSystemShape1.numCollideNeighbors" 4;
+setAttr "hairSystemShape1.maxSelfCollisionIterations" 1;
+setAttr "hairSystemShape1.iterations" 4;
+setAttr "hairSystemShape1.clumpWidth" 0.05;
+setAttr "hairSystemShape1.hairWidth" 0.05;
+setAttr "hairSystemShape1.opacity" 0.8;
+setAttr "hairSystemShape1.specularColorR" 0.35;
+setAttr "hairSystemShape1.specularColorG" 0.35;
+setAttr "hairSystemShape1.specularColorB" 0.3;
+setAttr "hairSystemShape1.specularPower" 1.453;
+setAttr "hairSystemShape1.castShadows" 1;
+setAttr "hairSystemShape1.diffuseRand" 0.2;
+setAttr "hairSystemShape1.specularRand" 0.4;
+setAttr "hairSystemShape1.subSegments" 2;
+
+// setup nucleus
+setAttr "nucleus1.gravityDirectionY" 1;
+setAttr "nucleus1.subSteps" 10;
+setAttr "nucleus1.maxCollisionIterations" 4;
+setAttr "nucleus1.timeScale" 1;
+setAttr "nucleus1.spaceScale" 0.01;
+setAttr "nucleus1.startFrame" 0;
+
+// set cameras
+setAttr "persp.translateX" 126.987;
+setAttr "persp.translateY" -53.466;
+setAttr "persp.translateZ" -142.942;
+setAttr "persp.rotateX" 161.062;
+setAttr "persp.rotateY" -758.2;
+setAttr "persp.rotateZ" 0;
+setAttr "persp.scaleX" 1;
+setAttr "persp.scaleY" 1;
+setAttr "persp.scaleZ" 1;
+setAttr "persp.visibility" 0;
+setAttr "perspShape.horizontalFilmAperture" 1.417;
+setAttr "perspShape.verticalFilmAperture" 0.945;
+setAttr "perspShape.focalLength" 35;
+setAttr "perspShape.lensSqueezeRatio" 1;
+setAttr "perspShape.fStop" 5.6;
+setAttr "perspShape.focusDistance" 5;
+setAttr "perspShape.shutterAngle" 144;
+setAttr "perspShape.centerOfInterest" 217.082;
+setAttr "perspShape.locatorScale" 1;
+
+// no solo as init state
+animLayer -edit -lock false AnimLayer6;
+animLayer -edit -mute 1 AnimLayer6;
+animLayer -edit -lock true AnimLayer6;
+animLayer -edit -mute 1 AnimLayer5;
+animLayer -edit -lock true AnimLayer5;
+animLayer -edit -mute 1 AnimLayer4;
+animLayer -edit -lock true AnimLayer4;
+animLayer -edit -mute 1 AnimLayer3;
+animLayer -edit -lock true AnimLayer3;
+animLayer -edit -mute 1 AnimLayer2;
+animLayer -edit -lock true AnimLayer2;
+animLayer -edit -mute 1 AnimLayer1;
+animLayer -edit -lock true AnimLayer1;
+
+animLayer -edit -solo 0 AnimLayer1;
+animLayer -edit -solo 0 AnimLayer2;
+animLayer -edit -solo 0 AnimLayer3;
+animLayer -edit -solo 0 AnimLayer4;
+animLayer -edit -solo 0 AnimLayer5;
+animLayer -edit -solo 0 AnimLayer6;
+
+file -save;

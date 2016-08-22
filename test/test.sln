@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{2BE06AF8-9C1E-4B91-B922-93A04A0AE120}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pyhair", "pyhair\pyhair.vcxproj", "{025121AE-522D-4298-8D99-540A450E3211}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test2", "Project1\Project1.vcxproj", "{93A93B7D-0AFD-4A38-B2B5-9B580A148811}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C_arraytest", "C_arraytest\C_arraytest.vcxproj", "{341E0DBA-F858-41D1-B017-5F04D189BE18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BE06AF8-9C1E-4B91-B922-93A04A0AE120}.Debug|x64.ActiveCfg = Debug|x64
+		{2BE06AF8-9C1E-4B91-B922-93A04A0AE120}.Debug|x64.Build.0 = Debug|x64
+		{2BE06AF8-9C1E-4B91-B922-93A04A0AE120}.Debug|x86.ActiveCfg = Debug|Win32
+		{2BE06AF8-9C1E-4B91-B922-93A04A0AE120}.Debug|x86.Build.0 = Debug|Win32
+		{2BE06AF8-9C1E-4B91-B922-93A04A0AE120}.Release|x64.ActiveCfg = Release|x64
+		{2BE06AF8-9C1E-4B91-B922-93A04A0AE120}.Release|x64.Build.0 = Release|x64
+		{2BE06AF8-9C1E-4B91-B922-93A04A0AE120}.Release|x86.ActiveCfg = Release|Win32
+		{2BE06AF8-9C1E-4B91-B922-93A04A0AE120}.Release|x86.Build.0 = Release|Win32
+		{025121AE-522D-4298-8D99-540A450E3211}.Debug|x64.ActiveCfg = Debug|x64
+		{025121AE-522D-4298-8D99-540A450E3211}.Debug|x64.Build.0 = Debug|x64
+		{025121AE-522D-4298-8D99-540A450E3211}.Debug|x86.ActiveCfg = Debug|Win32
+		{025121AE-522D-4298-8D99-540A450E3211}.Debug|x86.Build.0 = Debug|Win32
+		{025121AE-522D-4298-8D99-540A450E3211}.Release|x64.ActiveCfg = Release|x64
+		{025121AE-522D-4298-8D99-540A450E3211}.Release|x64.Build.0 = Release|x64
+		{025121AE-522D-4298-8D99-540A450E3211}.Release|x86.ActiveCfg = Release|Win32
+		{025121AE-522D-4298-8D99-540A450E3211}.Release|x86.Build.0 = Release|Win32
+		{93A93B7D-0AFD-4A38-B2B5-9B580A148811}.Debug|x64.ActiveCfg = Debug|x64
+		{93A93B7D-0AFD-4A38-B2B5-9B580A148811}.Debug|x64.Build.0 = Debug|x64
+		{93A93B7D-0AFD-4A38-B2B5-9B580A148811}.Debug|x86.ActiveCfg = Debug|Win32
+		{93A93B7D-0AFD-4A38-B2B5-9B580A148811}.Debug|x86.Build.0 = Debug|Win32
+		{93A93B7D-0AFD-4A38-B2B5-9B580A148811}.Release|x64.ActiveCfg = Release|x64
+		{93A93B7D-0AFD-4A38-B2B5-9B580A148811}.Release|x64.Build.0 = Release|x64
+		{93A93B7D-0AFD-4A38-B2B5-9B580A148811}.Release|x86.ActiveCfg = Release|Win32
+		{93A93B7D-0AFD-4A38-B2B5-9B580A148811}.Release|x86.Build.0 = Release|Win32
+		{341E0DBA-F858-41D1-B017-5F04D189BE18}.Debug|x64.ActiveCfg = Debug|x64
+		{341E0DBA-F858-41D1-B017-5F04D189BE18}.Debug|x64.Build.0 = Debug|x64
+		{341E0DBA-F858-41D1-B017-5F04D189BE18}.Debug|x86.ActiveCfg = Debug|Win32
+		{341E0DBA-F858-41D1-B017-5F04D189BE18}.Debug|x86.Build.0 = Debug|Win32
+		{341E0DBA-F858-41D1-B017-5F04D189BE18}.Release|x64.ActiveCfg = Release|x64
+		{341E0DBA-F858-41D1-B017-5F04D189BE18}.Release|x64.Build.0 = Release|x64
+		{341E0DBA-F858-41D1-B017-5F04D189BE18}.Release|x86.ActiveCfg = Release|Win32
+		{341E0DBA-F858-41D1-B017-5F04D189BE18}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

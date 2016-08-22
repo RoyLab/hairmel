@@ -1,0 +1,14 @@
+/*currentTime 0 ;
+select -r "pfxHair1";
+setSelectedHairCurves "current" "rest";
+
+playbackOptions -l "once" -ast 0 -aet 200 -min 0 -max 200;
+currentTime 0 ;
+play -f true;
+//play -f true -w;
+bakeResults -t "1:200" -simulation true "pfxHair1";
+currentTime 200;*/
+
+select -r "pfxHair1";
+setSelectedHairCurves "current" "start";
+file -save;

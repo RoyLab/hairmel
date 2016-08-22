@@ -1,0 +1,37 @@
+int $i;
+float $endFrame;
+string $layerName;
+for ($i = 1; $i < 7; $i++)
+{
+    $layerName = "AnimLayer"+$i;
+    animLayer -edit -mute 0 $layerName;
+    animLayer -edit -lock false $layerName;
+    animLayer -edit -solo 1 $layerName;
+    
+    // do cache animation
+    $endFrame = 79.0;
+    if ($i == 1)
+        $endFrame = 99.0;
+    
+    playbackOptions -l "once" -min 0 -max $endFrame;
+    
+    select -r head1 ;
+    select -add nRigid1 ;
+    select -add pfxHair1 ;
+    string $cacheName = "anim"+$i;
+    doCreateNclothCache 5 { "2", "1", "10", "OneFile", "0",
+     "D:/Data/modelimport/cache/curly","0", $cacheName,"0", "replace", "1", "1", "1","0","1","mcx" } ;
+     
+    //setAttr "defaultRenderGlobals.startFrame" 0;
+    //setAttr "defaultRenderGlobals.endFrame" $endFrame;
+    //setAttr "defaultRenderGlobals.byFrameStep" 1;
+    
+    //string $renderPath = "D:/Data/modelimport/render/curly/anim1";
+    //workspace -fr "images" $renderPath;
+    //workspace -saveWorkspace ;
+    //batchRender -f "D:/Data/modelimport/render/curly/anim1/anim";
+    
+    animLayer -edit -solo 0 $layerName;
+    animLayer -edit -mute 1 $layerName;
+    animLayer -edit -lock true $layerName;
+}

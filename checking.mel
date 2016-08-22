@@ -1,0 +1,24 @@
+print "Confirm the mesh is a collision obj...\n";
+if (0.0 == `optionVar -q makeCurvesDynamicCollideWithMesh`)
+{
+    print "Setup collision obj\n";
+    select -r head1;
+    makeCollideNCloth;
+}
+
+if (`getAttr "follicleShape1.startDirection"` == 0)
+{
+    print "Follicle direction wrong\n";
+
+    $follicles = `ls -type "follicle"`;
+    $sz = `size($follicles)`;
+    int $i = 0;
+    string $name;
+    for ($i = 1; $i <= $sz; $i++)
+    {
+        $name = "follicleShape"+$i+".startDirection";
+        setAttr $name 1;
+    }
+}
+
+file -save;

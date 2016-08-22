@@ -1,0 +1,11 @@
+print "Make curve dynamic...\n";
+
+select -r head1;
+select -add "curve*";
+makeCurvesDynamic 2 { "1", "1", "0", "0", "1"};
+$follicles = `ls -type "follicle"`;
+$sz = `size($follicles)`;
+
+$line = "Number of follicles generated: "+$sz+"\n";
+print $line;
+file -save;
