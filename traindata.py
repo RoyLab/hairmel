@@ -86,15 +86,6 @@ def runMain(begin, end=None):
     if begin <= state and end >= state:
         if begin == state:
             openFile()
-        mcmd.playbackOptions(animationStartTime=0)
-        mcmd.playbackOptions(animationEndTime=20)
-        #mcmd.play(f=True)
-        mcmd.bakeResults('pfxHair1', simulation=True, t=(0, 20), disableImplicitControl=True, sb=1, shape=True, cp=True)
-
-        # use openMaya to set the frame - cmds.currentTime does not
-        # stick in standalone:
-        import maya.OpenMaya as om
-        om.MGlobal.viewFrame(20)
         mel.eval('source "'+fullPath(state)+'"')
 
 

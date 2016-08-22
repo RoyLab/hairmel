@@ -1,7 +1,7 @@
 print "Confirm the mesh is a collision obj...\n";
 if (0.0 == `optionVar -q makeCurvesDynamicCollideWithMesh`)
 {
-    print "Setup collision obj\n";
+    print "Setup collision obj!\n";
     select -r head1;
     makeCollideNCloth;
 }
