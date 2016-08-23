@@ -1,4 +1,5 @@
 // setup hair system
+print "Setup hairSystemShape...\n";
 setAttr "hairSystemShape1.collide" 1;
 setAttr "hairSystemShape1.selfCollide" 1;
 setAttr "hairSystemShape1.collideGround" 0;
@@ -39,6 +40,7 @@ setAttr "hairSystemShape1.specularRand" 0.4;
 setAttr "hairSystemShape1.subSegments" 2;
 
 // setup nucleus
+print "Setup nucleus...\n";
 setAttr "nucleus1.gravityDirectionY" 1;
 setAttr "nucleus1.subSteps" 10;
 setAttr "nucleus1.maxCollisionIterations" 4;
@@ -47,6 +49,7 @@ setAttr "nucleus1.spaceScale" 0.01;
 setAttr "nucleus1.startFrame" 0;
 
 // set cameras
+print "Setup camera...\n";
 setAttr "persp.translateX" 126.987;
 setAttr "persp.translateY" -53.466;
 setAttr "persp.translateZ" -142.942;
@@ -68,6 +71,7 @@ setAttr "perspShape.centerOfInterest" 217.082;
 setAttr "perspShape.locatorScale" 1;
 
 // no solo as init state
+print "Setup animation layer state...\n";
 animLayer -edit -lock false AnimLayer6;
 animLayer -edit -mute 1 AnimLayer6;
 animLayer -edit -lock true AnimLayer6;

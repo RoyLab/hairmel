@@ -6,6 +6,7 @@ if (0.0 == `optionVar -q makeCurvesDynamicCollideWithMesh`)
     makeCollideNCloth;
 }
 
+print "Checking Follicles...\n";
 if (`getAttr "follicleShape1.startDirection"` == 0)
 {
     print "Follicle direction wrong\n";

@@ -7,7 +7,11 @@ playbackOptions -l "once" -ast 0 -aet $restTime -min 0 -max $restTime;
 int $i;
 print "Computing rest state...\n";
 for ($i=0;$i<$restTime;$i++)
+{
+    print ("\rComputing frame "+$i+"...");
     currentTime($i);
+}
+print "\n"
 
 select -r "pfxHair1";
 setSelectedHairCurves "current" "start";

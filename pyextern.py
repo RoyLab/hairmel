@@ -10,6 +10,6 @@ mel.eval('source "namedCommandSetup.mel";')
 print "Try to import pymel:"
 import pymel.core as pm
 
-def func(b, e=None):
+def func(b, e=None, p=None):
 	from traindata import runMain
 	runMain(b,e)
